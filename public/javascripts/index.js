@@ -26,8 +26,8 @@ $(document).ready(function () {
       //console.log(message.data);
       timeData.push(obj.time);
       temperatureData.push(obj.Weight);
-      console.log(obj.Weight)
-      document.getElementById("myDiv").innerHTML = obj.Weight; 
+      console.log(obj.Weight);
+      document.getElementById("myDiv").innerHTML = obj.Weight ; 
       
      // $('#myDiv').html(obj.Weight);
       // only keep no more than 50 points in the line chart
