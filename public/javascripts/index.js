@@ -27,7 +27,7 @@ $(document).ready(function () {
       // timeData.push(obj.time);
       //temperatureData.push(obj.Weight);
       //console.log(obj.Weight);
-      var num = obj.Weight.toFixed(2);
+      var num = obj.Weight.toFixed(3);
       if(num<0 || num==-0){
         num=0.00;
       }
