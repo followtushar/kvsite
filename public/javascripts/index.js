@@ -17,7 +17,7 @@ $(document).ready(function () {
     console.log('Successfully connect WebSocket');
   }
   ws.onmessage = function (message) {
-    //console.log('receive message' + message.data);
+    console.log('receive message' + message.data);
     try {
       var obj = JSON.parse(message.data);
       if(!obj.time || !obj.Weight) {
@@ -26,7 +26,7 @@ $(document).ready(function () {
       //console.log(message.data);
       // timeData.push(obj.time);
       //temperatureData.push(obj.Weight);
-      console.log(obj.Weight);
+      //console.log(obj.Weight);
       document.getElementById("myDiv").innerHTML = obj.Weight ; 
       
       // $('#myDiv').html(obj.Weight);
