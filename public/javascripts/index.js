@@ -27,8 +27,8 @@ $(document).ready(function () {
       // timeData.push(obj.time);
       //temperatureData.push(obj.Weight);
       //console.log(obj.Weight);
-      var num = obj.WebSocket.toFixed(2);
-      document.getElementById("myDiv").innerHTML = num +" Kg." ; 
+      var num = obj.Weight.toFixed(2);
+      document.getElementById("myDiv").innerHTML = num + " Kg." ; 
       
       // $('#myDiv').html(obj.Weight);
       // only keep no more than 50 points in the line chart
