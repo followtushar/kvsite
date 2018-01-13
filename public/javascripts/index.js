@@ -28,6 +28,9 @@ $(document).ready(function () {
       //temperatureData.push(obj.Weight);
       //console.log(obj.Weight);
       var num = obj.Weight.toFixed(2);
+      if(num<0){
+        num=0.00;
+      }
       document.getElementById("myDiv").innerHTML = num + " Kg." ; 
       
       // $('#myDiv').html(obj.Weight);
