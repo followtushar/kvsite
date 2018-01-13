@@ -17,7 +17,7 @@ $(document).ready(function () {
     console.log('Successfully connect WebSocket');
   }
   ws.onmessage = function (message) {
-    console.log('receive message' + message.data);
+    //console.log('receive message' + message.data);
     try {
       var obj = JSON.parse(message.data);
       if(!obj.time || !obj.weight) {
@@ -27,7 +27,9 @@ $(document).ready(function () {
       timeData.push(obj.time);
       temperatureData.push(obj.Weight);
       console.log(obj.Weight)
-      $('#myDiv').html(obj.Weight);
+      document.getElementById("myDiv").innerHTML = obj.Weight; 
+      
+     // $('#myDiv').html(obj.Weight);
       // only keep no more than 50 points in the line chart
       const maxLen = 50;
       var len = timeData.length;
