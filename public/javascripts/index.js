@@ -20,16 +20,16 @@ $(document).ready(function () {
     //console.log('receive message' + message.data);
     try {
       var obj = JSON.parse(message.data);
-      if(!obj.time || !obj.weight) {
+      if(!obj.time || !obj.Weight) {
         return;
       }
       //console.log(message.data);
-      timeData.push(obj.time);
-      temperatureData.push(obj.Weight);
+      // timeData.push(obj.time);
+      //temperatureData.push(obj.Weight);
       console.log(obj.Weight);
       document.getElementById("myDiv").innerHTML = obj.Weight ; 
       
-     // $('#myDiv').html(obj.Weight);
+      // $('#myDiv').html(obj.Weight);
       // only keep no more than 50 points in the line chart
       const maxLen = 50;
       var len = timeData.length;
