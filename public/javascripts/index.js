@@ -23,9 +23,10 @@ $(document).ready(function () {
       if(!obj.time || !obj.weight) {
         return;
       }
-      console.log(message.data);
+      //console.log(message.data);
       timeData.push(obj.time);
       temperatureData.push(obj.Weight);
+      console.log(obj.Weight)
       $('#myDiv').html(obj.Weight);
       // only keep no more than 50 points in the line chart
       const maxLen = 50;
