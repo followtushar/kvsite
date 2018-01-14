@@ -36,7 +36,7 @@ $(document).ready(function () {
 
       if(num>=4){
         var img = document.getElementById("img");
-        img.src = "img/half.png";
+        img.src = "img/full.png";
       }
       else if(num>= 8){
         var img = document.getElementById("img");
