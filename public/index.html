@@ -31,12 +31,12 @@
 
 
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!--body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"-->
 <div id="preloader">
   <div id="status"> <img src="img/preloader.gif" height="64" width="64" alt=""> </div>
 </div>
 <!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="display: block;" >
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
@@ -69,18 +69,54 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
 
-            <img src="img/blank.png" id="img" height="100px" witdth="50px" class="img-responsive"/>
+            <img src="img/full.png" id="img" height="300px" witdth="150px" />
         <h1><span class="brand-heading" id="myDiv"></span></h1>
           <p class="intro-text"></p>
-          <a href="#about" class="btn btn-default page-scroll">Book Laundry</a> </div>
-
-
-
-          
+          <button class="btn btn-default page-scroll"  data-toggle="modal" data-target="#myModal" >Book Laundry</button> </div>          
       </div>
     </div>
   </div>
 </div>
+
+
+<!--Modal for popup-->
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Booking Successful!</h4>
+      </div>
+      <div class="modal-body">
+        <p>You booking is successful. You will get the required details on your email.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="footer">
   <div class="container">
