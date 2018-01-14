@@ -32,6 +32,20 @@ $(document).ready(function () {
         num=0.00;
       }
       document.getElementById("myDiv").innerHTML = num + " Kg." ; 
+
+
+      if(num>=4){
+        var img = document.getElementById("img");
+        img.src = "img/half.png";
+      }
+      else if(num>= 8){
+        var img = document.getElementById("img");
+        img.src = "img/full.png";
+      }
+      else{
+        var img = document.getElementById("img");
+        img.src = "img/blank.png";
+      }
       
       // $('#myDiv').html(obj.Weight);
       // only keep no more than 50 points in the line chart
