@@ -1,4 +1,19 @@
 $(document).ready(function () {
+  function getresource(id)
+  {
+      if(id>=4)
+      {
+        $('#blank').hide();
+        $('#half').show();
+       }
+      else if(id>=8)
+      {
+        $('#half').hide();
+        $('#full').show();
+       }
+  
+   } 
+
   var timeData = [],
     temperatureData = [],
     humidityData = [];
@@ -34,9 +49,9 @@ $(document).ready(function () {
       document.getElementById("myDiv").innerHTML = num + " Kg." ; 
 
 
-      if(num>1){
+      if(num > 1.00){
         var img = document.getElementById("img");
-        img.src = img/full.png;
+        img.src = "img/full.png";
       }
       // else if(num>= 8){
       //   var img = document.getElementById("img");
