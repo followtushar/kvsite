@@ -11,6 +11,9 @@ $(document).ready(function () {
         $('#half').hide();
         $('#full').show();
        }
+       else{
+         $('#blank').show();
+       }
   
    } 
 
@@ -47,20 +50,20 @@ $(document).ready(function () {
         num=0.00;
       }
       document.getElementById("myDiv").innerHTML = num + " Kg." ; 
+      getresource(num);
 
-
-      if(num > 1.00){
-        var img = document.getElementById("img");
-        img.src = "img/full.png";
-      }
+      // if(num > 1.00){
+      //   var img = document.getElementById("img");
+      //   img.src = "img/full.png";
+      // }
       // else if(num>= 8){
       //   var img = document.getElementById("img");
       //   img.src = "img/full.png";
       // }
-      else{
-        var img = document.getElementById("img");
-        img.src = "img/blank.png";
-      }
+      // else{
+      //   var img = document.getElementById("img");
+      //   img.src = "img/blank.png";
+      // }
       
       // $('#myDiv').html(obj.Weight);
       // only keep no more than 50 points in the line chart
