@@ -34,7 +34,7 @@ $(document).ready(function () {
       document.getElementById("myDiv").innerHTML = num + " Kg." ; 
 
 
-      if(num>=1){
+      if(num>1){
         var img = document.getElementById("img");
         img.src = "img/full.png";
       }
