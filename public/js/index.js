@@ -34,14 +34,14 @@ $(document).ready(function () {
       document.getElementById("myDiv").innerHTML = num + " Kg." ; 
 
 
-      if(num>=4){
+      if(num>=1){
         var img = document.getElementById("img");
         img.src = "img/full.png";
       }
-      else if(num>= 8){
-        var img = document.getElementById("img");
-        img.src = "img/full.png";
-      }
+      // else if(num>= 8){
+      //   var img = document.getElementById("img");
+      //   img.src = "img/full.png";
+      // }
       else{
         var img = document.getElementById("img");
         img.src = "img/blank.png";
